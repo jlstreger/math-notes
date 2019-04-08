@@ -1,0 +1,196 @@
+body{
+  margin: auto 0;
+}
+
+/*NAVIGATION BAR*/
+
+.main-nav{
+    margin: 0;
+    list-style:none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s linear;
+}
+
+.main-nav:hover{
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.blue {
+  background: #7abcff; /* Old browsers */
+  background: -moz-linear-gradient(top, #7abcff 0%, #60abf8 44%, #4096ee 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#7abcff), color-stop(44%,#60abf8), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* IE10+ */
+  background: linear-gradient(top, #7abcff 0%,#60abf8 44%,#4096ee 100%); /* W3C */
+}
+
+.icon{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3em;
+}
+
+li{
+  padding: 20px;
+}
+
+a{
+  text-decoration: none;
+}
+
+.push{
+  margin-left:auto;
+}
+
+.sticky{
+  position: fixed;
+  top:0;
+  width: 100%
+
+}
+
+/*NAVIGATION BAR ADJUST TO SCREEN SIZE*/
+
+@media only screen and (max-width: 700px){
+  .main-nav{
+    font-size: 1em;
+    padding: 0;
+  }
+
+  .icon{
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 550px){
+  .main-nav{
+    font-size: .8em;
+    padding: 0;
+  }
+
+  .icon{
+    font-size: .9em;
+  }
+}
+
+/*COVER*/
+
+.cover{
+  margin: 0;
+  height: 60vh;
+}
+
+header{
+  margin: 0;
+  background-position: center;
+  background-image: url("img/header.jpg");
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header h1{
+  padding-left: 75px;
+  color: green;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 300px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.btn-xl {
+  padding: 1rem 2rem;
+}
+
+.btn-primary {
+  background-color: #355D97;
+  border-color: #355D97;
+ }
+
+.btn-primary:hover {
+  background-color: #17468B;
+  border-color: #17468B;
+  border-width: 5px;
+  cursor: pointer;
+}
+
+/*Products menu*/
+
+.courses{
+  color: white;
+  margin: 0;
+  list-style:none;
+  font-family: 'Montserrat', sans-serif;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  transition: all 0.3s linear;
+}
+
+@media only screen and (max-width: 900px){
+  .courses{
+    font-size: .9em;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 700px){
+  .courses{
+    font-size: .8em;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .courses{
+    font-size: .7em;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .courses{
+    font-size: .6em;
+    padding: 0;
+  }
+}
+
+
+.courses:hover{
+  -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+  box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/*About*/
+.about{
+  padding-top: 20px;
+  padding-right: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.about img{
+  height: 200px;
+  width: 300px;
+  float: left;
+  margin: 20px;
+
+}
